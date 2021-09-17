@@ -2,9 +2,9 @@
 
 let numeroIngresado = prompt("ingrese aqui un numero del 1 al 100")
 
-if ((numeroIngresado < 1) || (numeroIngresado > 100)){
+if (numeroIngresado < 1 || numeroIngresado > 100){
   alert("Ese no es un numero entre 1 y 100. Media pila.")
 }
-else if ((numeroIngresado >= 1) || (numeroIngresado <=100)){
-  alert("ingresaste " + numeroIngresado + ". Gracias!")
+else if (numeroIngresado >= 1 || numeroIngresado <=100){
+  alert("Ingresaste " + numeroIngresado + ". Gracias!")
 }
