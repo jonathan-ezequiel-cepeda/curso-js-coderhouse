@@ -16,4 +16,8 @@ let nuevoPrecioSinIva = resta(precioProducto, precioDescuento);
 let precioDolarSolidarioConIva = calcularDolarSolidario(nuevoPrecioConIva);
 let precioDolarSolidarioSinIva = calcularDolarSolidario(nuevoPrecioSinIva);
 
-alert("El precio del producto a la cotizacion del dolar actual es de: " + precioDolarSolidarioSinIva + " pesos " + `(Precio final con iva incluido: ${precioDolarSolidarioConIva} pesos)`);
+if (precioProducto < precioDescuento) {
+  alert("El precio de descuento no puede ser mayor al precio del producto")
+} else {
+  alert("El precio del producto a la cotizacion del dolar actual es de: " + precioDolarSolidarioSinIva + " pesos " + `(Precio final con iva incluido: ${precioDolarSolidarioConIva} pesos)`);
+}
