@@ -1,3 +1,5 @@
+//Se creeo un array con los objetos ya creados y se los ordeno de menor a mayor precio. Se crearon funciones que utilizan metodos para filtrar los objetos del array por precio maximo y precio minimo. Se creo una funcion que utiliza el metodo de push para agregar nuevos productos al array, y ordenarlos de mayor a menor precio. 
+
 class Productos {
   constructor(nombreP, precioP, diasP){
     this.nombreP = nombreP,
