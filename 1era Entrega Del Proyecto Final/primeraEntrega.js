@@ -20,9 +20,9 @@ const osaka = new Productos("osaka", 1700, 7)
 let boton = prompt("Nuestros paquetes disponibles son Osaka y Tokyo. Cual de los 2 desea comprar?")
 let cantidadCompra = prompt("Que cantidad de paquetes desea comprar?")
 
-if (boton == "osaka" || boton == "Osaka" || boton == "OSAKA"){
+if (boton.toLowerCase() == "osaka"){
   osaka.comprarP(cantidadCompra);
-} else if(boton == "tokyo" || boton == "Tokyo" || boton == "TOKYO"){
+} else if(boton.toLowerCase() == "tokyo"){
   tokyo.comprarP(cantidadCompra);
 } else {
   alert("No ingresaste una opcion valida")

@@ -1,5 +1,3 @@
-//Se creeo un array con los objetos ya creados y se los ordeno de menor a mayor precio. Se crearon funciones que utilizan metodos para filtrar los objetos del array por precio maximo y precio minimo. Se creo una funcion que utiliza el metodo de push para agregar nuevos productos al array, y ordenarlos de mayor a menor precio. 
-
 class Productos {
   constructor(nombreP, precioP, diasP){
     this.nombreP = nombreP,
@@ -105,13 +103,3 @@ lugares.sort((a, b) => {
 })
 
 console.log(lugares)
-
-/*
-NO PRESTAR ATENCION A ESTO, ES PARA FIJARME MAS ADELANTE UNA COSA
-
-const tokyo = new Productos({nombreP: "toyko", precioP: 2000, diasP: 7})
-const osaka = new Productos({nombrep: "osaka", precioP: 1700, diasP:  7})
-const kyoto = new Productos({nombrep: "kyoto", precioP: 1800, diasP: 7})
-const fukuoka = new Productos({nombrep: "fukuoka", precioP: 1500, diasP: 7})
-const nagano = new Productos({nombrep: "nagano", precioP: 1400, diasP: 7})
-*/
