@@ -32,10 +32,14 @@ const lugares = [tokyo, kyoto, osaka, nagano, fukuoka]
 
 const filtrarPrecioMaximo = () => {
 
-  const precioMaximo = Number(prompt("Cual es el precio maximo que quiere pagar?"))
-  
-  const filtroPrecioMaximo = lugares.filter (lugares => lugares.precioP <= precioMaximo)
-  console.log(filtroPrecioMaximo)
+  const precioMaximo = Number(prompt("Cual es el precio maximo que quiere pagar? (Nuestro paquete mas barato al dia de hoy es de 1400)"))
+
+  if (precioMaximo <= 0) {
+    alert("No es un valor valido")
+  } else {
+    const filtroPrecioMaximo = lugares.filter (lugares => lugares.precioP <= precioMaximo)
+    console.log(filtroPrecioMaximo)
+  }
   
   }
   
@@ -43,10 +47,14 @@ const filtrarPrecioMaximo = () => {
   
   const filtrarPrecioMinimo = () => {
   
-    const precioMinimo = Number(prompt("Cual es el precio minimo que quiere pagar?"))
-    
-    const filtroPrecioMinimo = lugares.filter (lugares => lugares.precioP >= precioMinimo)
-    console.log(filtroPrecioMinimo)
+    const precioMinimo = Number(prompt("Cual es el precio minimo que quiere pagar? (Nuestro paquete mas barato al dia de hoy es de 2000)"))
+
+    if (precioMinimo < 0) {
+      alert("No es un valor valido")
+    }else{
+      const filtroPrecioMinimo = lugares.filter (lugares => lugares.precioP >= precioMinimo)
+      console.log(filtroPrecioMinimo)
+    }
   }
   
   //funcion para agregar un nuevo objeto al array
@@ -114,4 +122,5 @@ const osaka = new Productos({nombrep: "osaka", precioP: 1700, diasP:  7})
 const kyoto = new Productos({nombrep: "kyoto", precioP: 1800, diasP: 7})
 const fukuoka = new Productos({nombrep: "fukuoka", precioP: 1500, diasP: 7})
 const nagano = new Productos({nombrep: "nagano", precioP: 1400, diasP: 7})
+
 */

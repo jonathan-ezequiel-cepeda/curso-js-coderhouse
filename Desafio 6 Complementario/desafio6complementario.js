@@ -1,4 +1,4 @@
-//Se creeo un array con los objetos ya creados y se los ordeno de menor a mayor precio. Se crearon funciones que utilizan metodos para filtrar los objetos del array por precio maximo y precio minimo. Se creo una funcion que utiliza el metodo de push para agregar nuevos productos al array, y ordenarlos de mayor a menor precio. 
+//Se creeo un array con los objetos ya creados y se los ordeno de menor a mayor precio. Se crearon funciones que utilizan metodos para filtrar los objetos del array por precio maximo y precio minimo (Los resultados se muestran por consola). Se creo una funcion que utiliza el metodo de push para agregar nuevos productos al array, y ordenarlos de mayor a menor precio. 
 
 class Productos {
   constructor(nombreP, precioP, diasP){
@@ -32,10 +32,14 @@ const lugares = [tokyo, kyoto, osaka, nagano, fukuoka]
 
 const filtrarPrecioMaximo = () => {
 
-  const precioMaximo = Number(prompt("Cual es el precio maximo que quiere pagar?"))
-  
-  const filtroPrecioMaximo = lugares.filter (lugares => lugares.precioP <= precioMaximo)
-  console.log(filtroPrecioMaximo)
+  const precioMaximo = Number(prompt("Cual es el precio maximo que quiere pagar? (Nuestro paquete mas barato al dia de hoy es de 1400)"))
+
+  if (precioMaximo <= 0) {
+    alert("No es un valor valido")
+  } else {
+    const filtroPrecioMaximo = lugares.filter (lugares => lugares.precioP <= precioMaximo)
+    console.log(filtroPrecioMaximo)
+  }
   
   }
   
@@ -43,10 +47,14 @@ const filtrarPrecioMaximo = () => {
   
   const filtrarPrecioMinimo = () => {
   
-    const precioMinimo = Number(prompt("Cual es el precio minimo que quiere pagar?"))
-    
-    const filtroPrecioMinimo = lugares.filter (lugares => lugares.precioP >= precioMinimo)
-    console.log(filtroPrecioMinimo)
+    const precioMinimo = Number(prompt("Cual es el precio minimo que quiere pagar? (Nuestro paquete mas barato al dia de hoy es de 2000)"))
+
+    if (precioMinimo < 0) {
+      alert("No es un valor valido")
+    }else{
+      const filtroPrecioMinimo = lugares.filter (lugares => lugares.precioP >= precioMinimo)
+      console.log(filtroPrecioMinimo)
+    }
   }
   
   //funcion para agregar un nuevo objeto al array
