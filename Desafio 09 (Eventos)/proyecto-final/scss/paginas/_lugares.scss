@@ -1,0 +1,98 @@
+.lugares-grid {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas:
+    "tokyo text-tokyo"
+    "kyoto text-kyoto"
+    "osaka text-osaka"
+    "nagano text-nagano"
+    "fukuoka text-fukuoka";
+  row-gap: 1rem;
+  column-gap: 1rem;
+  align-items: center;
+  justify-items: center;
+  flex-wrap: wrap;
+}
+
+.title-grid {
+  font-size: 200%;
+  text-align: center;
+  margin: 5px;
+}
+
+.image-grid {
+  width: $width-img * 3;
+}
+
+.text-grid {
+  text-align: center;
+  vertical-align: middle;
+  align-self: center;
+  padding: 0rem;
+}
+
+.text-grid:hover {
+  @include hoverLugares;
+}
+
+.tokyo {
+  @include lugar(tokyo);
+}
+
+.tokyo:hover {
+  @include hoverLugares;
+}
+
+.text-tokyo {
+  @include textLugar(text-tokyo);
+}
+
+.kyoto {
+  @include lugar(kyoto);
+}
+
+.kyoto:hover {
+  @include hoverLugares;
+}
+
+.text-kyoto {
+  @include textLugar(text-kyoto);
+}
+
+.osaka {
+  @include lugar(osaka);
+}
+
+.osaka:hover {
+  @include hoverLugares;
+}
+
+.text-osaka {
+  @include textLugar(text-osaka);
+}
+
+.nagano {
+  @include lugar(nagano);
+}
+
+.nagano:hover {
+  @include hoverLugares;
+}
+
+.text-nagano {
+  @include textLugar(text-nagano);
+}
+
+.fukuoka {
+  @include lugar(fukuoka);
+}
+
+.fukuoka:hover {
+  @include hoverLugares;
+}
+
+.text-fukuoka {
+  @include textLugar(text-fukuoka);
+}
