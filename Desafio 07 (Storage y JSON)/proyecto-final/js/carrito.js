@@ -8,14 +8,15 @@ if (localStorage.getItem("carrito") == null) {
     listaObjetos = JSON.parse(localStorage.getItem("carrito"))
 }
 
-listaObjetos.forEach(element => {
-  imprimirDatos.innerHTML += `  
+for (let i = 0; i < listaObjetos.length; i++){
+  const div = document.createElement("div");
+  div.innerHTML = `  
   <ul class="list-group">
-  <li class="list-group-item d-grid gap-2 col-6 mx-auto vertical list-group-item-danger">Paquete ${element.nombreP}, ${element.precioP}</li>
+  <li class="list-group-item d-grid gap-2 col-6 mx-auto vertical list-group-item-danger">Paquete ${listaObjetos[i].nombreP}, ${listaObjetos[i].precioP}</li>
   </ul>
   `
-})
-
+  paqueteDinamico2.appendChild(div);
+}
 
 const aceptarCompra = () => {
 
@@ -35,3 +36,4 @@ const aceptarCompra = () => {
 btn.addEventListener("click", () => {
   aceptarCompra()
 })
+
