@@ -7,39 +7,36 @@ if (localStorage.getItem("lista") == null) {
     listaObjetos = JSON.parse(localStorage.getItem("lista"))
 }
 
-listaObjetos.forEach(element => {
-  
-  let index = listaObjetos.indexOf(element)
-  console.log(index)
-
-  imprimirDatos.innerHTML += `  
+for (let i = 0; i < listaObjetos.length; i++){
+  const div = document.createElement("div");
+  div.innerHTML =  `  
   
   <div class="d-grid gap-2 col-6 mx-auto vertical ">
-  <button type="button" class="btn btnColor fst-italic fw-bold" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Paquete ${element.nombreP}</button>
+  <button type="button" class="btn btnColor fst-italic fw-bold" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Paquete ${listaObjetos[i].nombreP}</button>
 
   <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">${element.nombreP}</h5>
+          <h5 class="modal-title" id="staticBackdropLabel">${listaObjetos[i].nombreP}</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body text-center fst-italic fw-bold">
-          Este paquete incluye alojamiento por ${element.diasP} en un hotel 5 estrellas con desayuno y cena incluidos. Como así también, una excursión por día gratuita a diferentes lugares turísticos tanto dentro, como fuera de la ciudad.
-          Tiene un costo de ${element.precioP} dolares.
+          Este paquete incluye alojamiento por ${listaObjetos[i].diasP} en un hotel 5 estrellas con desayuno y cena incluidos. Como así también, una excursión por día gratuita a diferentes lugares turísticos tanto dentro, como fuera de la ciudad.
+          Tiene un costo de ${listaObjetos[i].precioP} dolares.
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btnColor fst-italic fw-bold" data-bs-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btnColor fst-italic fw-bold" onclick="agregar(${[index]})">Agregar al carrito</button>
+          <button type="button" class="btn btnColor fst-italic fw-bold" onclick="agregar(${[i]})">Agregar al carrito</button>
         </div>
       </div>
     </div>
   </div>
   `
+  paqueteDinamico.appendChild(div);
+}
 
-})
-
-const agregar = (index) => {
+const agregar = (i) => {
 
     let carrito;
     if (localStorage.getItem("carrito") == null) {
@@ -49,31 +46,7 @@ const agregar = (index) => {
     }
 
 
-    carrito.push(listaObjetos[index])
+    carrito.push(listaObjetos[i])
     localStorage.setItem("carrito", JSON.stringify(carrito))
+    alert("Agregaste el paquete al carrito")
 }
-
-/*
-
-  <div class="d-grid gap-2 col-6 mx-auto vertical ">
-    <button type="button" class="btn btnColor fst-italic fw-bold" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Paquete Tokyo</button>
-
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel">Paquete Tokyo</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body text-center fst-italic fw-bold">
-            Este paquete incluye alojamiento por 15 días en un hotel 5 estrellas con desayuno y cena incluidos. Como así también, una excursión por día gratuita a diferentes lugares turísticos tanto dentro, como fuera de la ciudad.
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btnColor fst-italic fw-bold" data-bs-dismiss="modal">Cancelar</button>
-            <button type="button" class="btn btnColor fst-italic fw-bold">Agregar al carrito</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    */
