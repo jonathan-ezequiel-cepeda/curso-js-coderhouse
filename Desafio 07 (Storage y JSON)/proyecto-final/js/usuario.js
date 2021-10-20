@@ -1,10 +1,3 @@
-class Usuario {
-  constructor(nombre, contraseña){
-    this.nombre = nombre;
-    this.contraseña = contraseña;
-  }
-}
-
 class Productos {
   constructor(nombreP, precioP, diasP){
     this.nombreP = nombreP,
@@ -13,13 +6,11 @@ class Productos {
   }
 }
 
-const tokyo = new Productos( "Toyko", 2000, 7)
+const tokyo = new Productos( "Toyko", 2000, 5)
 const osaka = new Productos("Osaka", 1700,  7)
-const kyoto = new Productos("Kyoto", 1800, 7)
-const fukuoka = new Productos("Fukuoka", 1500, 7)
-const nagano = new Productos("Nagano", 1400, 7)
-
-const usuario1 = new Usuario ("jonathan", "coderhouse")
+const kyoto = new Productos("Kyoto", 1800, 4)
+const fukuoka = new Productos("Fukuoka", 1500, 9)
+const nagano = new Productos("Nagano", 1400, 15)
 
 let listaProductos = [tokyo, osaka, kyoto, fukuoka, nagano]
 
@@ -33,6 +24,31 @@ const agregarLugares = (nombreP, precioP, diasP) => {
   const producto = new Productos(nombreP, precioP, diasP)
   return producto
 }
+
+const guardarDatos = () => {
+  let nombreP = document.getElementById("nombreB").value
+  let precioP = document.getElementById("precioB").value
+  let diasP = document.getElementById("diasB").value
+
+  listaProductos.push(agregarLugares(nombreP, precioP, diasP))
+
+  localStorage.setItem("lista", JSON.stringify(listaProductos))
+}   
+
+document.getElementById("agregarB").addEventListener("click", (e) => {
+  e.preventDefault()
+  guardarDatos()
+})
+
+/*
+class Usuario {
+  constructor(nombre, contraseña){
+    this.nombre = nombre;
+    this.contraseña = contraseña;
+  }
+}
+
+const usuario1 = new Usuario ("jonathan", "coderhouse")
 
 const confirmacion = () => {
 
@@ -66,5 +82,6 @@ const confirmacion = () => {
   }
  }
 }
-
 confirmacion()
+
+*/

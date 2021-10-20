@@ -8,13 +8,13 @@ if (localStorage.getItem("lista") == null) {
 }
 
 for (let i = 0; i < listaObjetos.length; i++){
-  const div = document.createElement("div");
+  let div = document.createElement("div");
   div.innerHTML =  `  
   
   <div class="d-grid gap-2 col-6 mx-auto vertical ">
-  <button type="button" class="btn btnColor fst-italic fw-bold" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Paquete ${listaObjetos[i].nombreP}</button>
+  <button type="button" class="btn btnColor fst-italic fw-bold" data-bs-toggle="modal" data-bs-target="#staticBackdrop${i}">Paquete ${listaObjetos[i].nombreP}</button>
 
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal fade" id="staticBackdrop${i}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
