@@ -1,0 +1,1007 @@
+.colorTitulo {
+  color: #555555;
+}
+
+.center {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.borde {
+  border: solid 0.5em #c56565;
+  border-radius: 5%;
+  opacity: 1;
+}
+
+.borde:hover {
+  opacity: 1;
+}
+
+.escala {
+  width: 20em;
+}
+
+.vertical {
+  margin: 1rem;
+  text-align: center;
+}
+
+p {
+  color: #555555;
+  text-align: center;
+  font-weight: bold;
+  margin: 3em;
+}
+
+h4 {
+  margin-top: 3rem;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+h3 {
+  color: #ac2b2b;
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  font-size: 1.5rem;
+}
+
+a {
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  text-decoration: none;
+  color: #c91f1f;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../imagenes/background.png);
+  background-size: 30%;
+  background-repeat: repeat;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+header {
+  background-image: url(../imagenes/bg-header.png);
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+header nav ul li {
+  color: #c91f1f;
+  display: inline-block;
+  font-size: small;
+  margin: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.1rem;
+  padding: 0.1rem 1.5rem;
+  opacity: 0.9;
+}
+
+header nav ul li:hover {
+  background-position: right center;
+  color: black;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+header .titulo {
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  text-decoration: none;
+  color: #c91f1f;
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+header .titulo :hover {
+  color: black;
+  opacity: 0.8;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+header .logo {
+  width: 6rem;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.menuh {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-image: url(../imagenes/footer.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-bottom: -2%;
+}
+
+footer .linea {
+  border-top: solid #555555;
+  height: 1rem;
+  padding: 0;
+  margin: 0.2rem;
+}
+
+footer .titulo2 {
+  color: #c91f1f;
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  font-size: 150%;
+  padding: 0.1rem;
+}
+
+footer .tituloContacto {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+footer .flex {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #ac2b2b;
+}
+
+footer .flex .logoRedes {
+  width: 3rem;
+  display: -ms-inline-flexbox;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .flex .logoRedes:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+footer .flex .redes-sociales {
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  color: #ac2b2b;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: lighter;
+  display: inline-block;
+}
+
+footer input {
+  border-style: solid;
+  border-radius: 1rem;
+  border-color: #c56565;
+  width: 10rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  color: #c91f1f;
+}
+
+footer textarea {
+  border-radius: 1rem;
+  border-color: #c56565;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  width: 14rem;
+  height: 14rem;
+}
+
+.actividades {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  justify-items: normal;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  color: #555555;
+  margin-top: 3rem;
+}
+
+.actividades .textImg {
+  opacity: 0.8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  justify-items: normal;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 2rem;
+}
+
+.actividades .textImg:hover {
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  justify-items: normal;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.actividades .textImg .textImg__titulo {
+  color: #ac2b2b;
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  font-size: 1.5rem;
+}
+
+.actividades .textImg .textImg__text {
+  opacity: 0.8;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  justify-items: normal;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.actividades .textImg .textImg__img {
+  border: solid 0.5em #c56565;
+  border-radius: 5%;
+  opacity: 1;
+  width: 20rem;
+}
+
+.videoflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  justify-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 3rem;
+}
+
+.videoflex iframe {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0.5rem;
+  border: solid 0.5em #c56565;
+  border-radius: 5%;
+  opacity: 0.8;
+}
+
+.videoflex iframe:hover {
+  opacity: 1;
+}
+
+.lugares-grid {
+  margin: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: (auto)[5];
+      grid-template-rows: repeat(5, auto);
+      grid-template-areas: "tokyo text-tokyo" "kyoto text-kyoto" "osaka text-osaka" "nagano text-nagano" "fukuoka text-fukuoka";
+  row-gap: 1rem;
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.title-grid {
+  font-size: 200%;
+  text-align: center;
+  margin: 5px;
+}
+
+.image-grid {
+  width: 30rem;
+}
+
+.text-grid {
+  text-align: center;
+  vertical-align: middle;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 0rem;
+}
+
+.text-grid:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+}
+
+.tokyo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: tokyo;
+  margin: 2rem;
+}
+
+.tokyo:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+}
+
+.text-tokyo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: text-tokyo;
+  margin: 5rem;
+  border: solid 0.5em #c56565;
+  border-radius: 5%;
+}
+
+.kyoto {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: kyoto;
+  margin: 2rem;
+}
+
+.kyoto:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+}
+
+.text-kyoto {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: text-kyoto;
+  margin: 5rem;
+  border: solid 0.5em #c56565;
+  border-radius: 5%;
+}
+
+.osaka {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: osaka;
+  margin: 2rem;
+}
+
+.osaka:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+}
+
+.text-osaka {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: text-osaka;
+  margin: 5rem;
+  border: solid 0.5em #c56565;
+  border-radius: 5%;
+}
+
+.nagano {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: nagano;
+  margin: 2rem;
+}
+
+.nagano:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+}
+
+.text-nagano {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: text-nagano;
+  margin: 5rem;
+  border: solid 0.5em #c56565;
+  border-radius: 5%;
+}
+
+.fukuoka {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: fukuoka;
+  margin: 2rem;
+}
+
+.fukuoka:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+}
+
+.text-fukuoka {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: text-fukuoka;
+  margin: 5rem;
+  border: solid 0.5em #c56565;
+  border-radius: 5%;
+}
+
+article {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  background-color: #c56565;
+  text-align: center;
+}
+
+.btnColor {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  background-color: #ffb8c5;
+  text-align: center;
+  border-color: #ac2b2b;
+  border-width: 0.2rem;
+  opacity: 0.8;
+}
+
+.btnColor:hover {
+  background-color: #fc91a5;
+}
+
+.banner {
+  width: 60%;
+  border-radius: 10%;
+  margin-bottom: 3rem;
+}
+
+.empresa {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.petalo {
+  width: 1rem;
+  opacity: 0.7;
+  overflow: hidden;
+}
+
+.leaf {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.leaf div {
+  position: absolute;
+  display: block;
+}
+
+.leaf div:nth-child(1) {
+  left: 10%;
+  -webkit-animation: animate 15s linear infinite;
+          animation: animate 15s linear infinite;
+}
+
+.leaf div:nth-child(2) {
+  left: 20%;
+  -webkit-animation: animate 20s linear infinite;
+          animation: animate 20s linear infinite;
+}
+
+.leaf div:nth-child(3) {
+  left: 30%;
+  -webkit-animation: animate 25s linear infinite;
+          animation: animate 25s linear infinite;
+}
+
+.leaf div:nth-child(4) {
+  left: 40%;
+  -webkit-animation: animate 30s linear infinite;
+          animation: animate 30s linear infinite;
+}
+
+.leaf div:nth-child(5) {
+  left: 50%;
+  -webkit-animation: animate 18s linear infinite;
+          animation: animate 18s linear infinite;
+}
+
+.leaf div:nth-child(6) {
+  left: 60%;
+  -webkit-animation: animate 28s linear infinite;
+          animation: animate 28s linear infinite;
+}
+
+.leaf div:nth-child(7) {
+  left: 70%;
+  -webkit-animation: animate 24s linear infinite;
+          animation: animate 24s linear infinite;
+}
+
+.leaf div:nth-child(8) {
+  left: 80%;
+  -webkit-animation: animate 21s linear infinite;
+          animation: animate 21s linear infinite;
+}
+
+.leaf div:nth-child(9) {
+  left: 84%;
+  -webkit-animation: animate 18s linear infinite;
+          animation: animate 18s linear infinite;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    opacity: 0.5;
+    top: -10%;
+    -webkit-transform: translateX(30px) rotate(0deg);
+            transform: translateX(30px) rotate(0deg);
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    -webkit-transform: translateX(-30px) rotate(45deg);
+            transform: translateX(-30px) rotate(45deg);
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateX(30px) rotate(90deg);
+            transform: translateX(30px) rotate(90deg);
+    opacity: 1;
+  }
+  60% {
+    -webkit-transform: translateX(-30px) rotate(135deg);
+            transform: translateX(-30px) rotate(135deg);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translateX(30px) rotate(180deg);
+            transform: translateX(30px) rotate(180deg);
+    opacity: 0.7;
+  }
+  100% {
+    top: 105%;
+    -webkit-transform: translateX(30px) rotate(225deg);
+            transform: translateX(30px) rotate(225deg);
+    opacity: 0.2;
+  }
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0.5;
+    top: -10%;
+    -webkit-transform: translateX(30px) rotate(0deg);
+            transform: translateX(30px) rotate(0deg);
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    -webkit-transform: translateX(-30px) rotate(45deg);
+            transform: translateX(-30px) rotate(45deg);
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateX(30px) rotate(90deg);
+            transform: translateX(30px) rotate(90deg);
+    opacity: 1;
+  }
+  60% {
+    -webkit-transform: translateX(-30px) rotate(135deg);
+            transform: translateX(-30px) rotate(135deg);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translateX(30px) rotate(180deg);
+            transform: translateX(30px) rotate(180deg);
+    opacity: 0.7;
+  }
+  100% {
+    top: 105%;
+    -webkit-transform: translateX(30px) rotate(225deg);
+            transform: translateX(30px) rotate(225deg);
+    opacity: 0.2;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .lugares-grid {
+    margin: 2rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: (19%)[5];
+        grid-template-rows: repeat(5, 19%);
+        grid-template-areas: "tokyo text-tokyo" "kyoto text-kyoto" "osaka text-osaka" "nagano text-nagano" "fukuoka text-fukuoka";
+    row-gap: 1rem;
+    -webkit-column-gap: 1rem;
+            column-gap: 1rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .videoflex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    justify-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin: 2rem;
+  }
+  .textImg {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  .text-tokyo {
+    margin-top: 10rem;
+  }
+  .text-nagano {
+    margin-top: 10rem;
+  }
+  .text-kyoto {
+    margin-top: 10rem;
+  }
+  .text-fukuoka {
+    margin-top: 10rem;
+  }
+  .text-osaka {
+    margin-top: 10rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .lugares-grid {
+    margin: 1rem;
+    padding: 1rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: (9.3%)[10];
+        grid-template-rows: repeat(10, 9.3%);
+        grid-template-areas: "tokyo" "text-tokyo" "kyoto" "text-kyoto" "osaka" "text-osaka" "nagano" "text-nagano" "fukuoka" "text-fukuoka";
+    row-gap: 2rem;
+    -webkit-column-gap: 1rem;
+            column-gap: 1rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+  .image-grid {
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lugares-grid {
+    margin: 0rem;
+    padding: 1rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: (9.8%)[10];
+        grid-template-rows: repeat(10, 9.8%);
+        grid-template-areas: "tokyo" "text-tokyo" "kyoto" "text-kyoto" "osaka" "text-osaka" "nagano" "text-nagano" "fukuoka" "text-fukuoka";
+    row-gap: 0rem;
+    -webkit-column-gap: 0rem;
+            column-gap: 0rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+  .image-grid {
+    width: 20rem;
+  }
+  .textImg {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  footer {
+    background-image: url(../imagenes/footer.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: -5%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .lugares-grid {
+    margin: 0;
+    padding: 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: (9.8%)[10];
+        grid-template-rows: repeat(10, 9.8%);
+        grid-template-areas: "tokyo" "text-tokyo" "kyoto" "text-kyoto" "osaka" "text-osaka" "nagano" "text-nagano" "fukuoka" "text-fukuoka";
+    row-gap: 0rem;
+    -webkit-column-gap: 0rem;
+            column-gap: 0rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+  .textImg {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .text-grid {
+    border: none;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+  .image-grid {
+    width: 15rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+  footer {
+    background-image: url(../imagenes/footer.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: -5%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .lugares-grid {
+    margin: 0;
+    padding: 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: (9.8%)[10];
+        grid-template-rows: repeat(10, 9.8%);
+        grid-template-areas: "tokyo" "text-tokyo" "kyoto" "text-kyoto" "osaka" "text-osaka" "nagano" "text-nagano" "fukuoka" "text-fukuoka";
+    row-gap: 0rem;
+    -webkit-column-gap: 0rem;
+            column-gap: 0rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+  .textImg {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .text-grid {
+    border: none;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+  .image-grid {
+    width: 15rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+  .titulo2 {
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  .titulo {
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  p {
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  .leaf div:nth-child(9) {
+    display: none;
+  }
+  footer {
+    background-image: url(../imagenes/footer.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: -5%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .lugares-grid {
+    margin: 0;
+    padding: 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: (9.8%)[10];
+        grid-template-rows: repeat(10, 9.8%);
+        grid-template-areas: "tokyo" "text-tokyo" "kyoto" "text-kyoto" "osaka" "text-osaka" "nagano" "text-nagano" "fukuoka" "text-fukuoka";
+    row-gap: 0rem;
+    -webkit-column-gap: 0rem;
+            column-gap: 0rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+  .textImg {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .text-grid {
+    border: none;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+  .image-grid {
+    width: 15rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+  .textImg__img {
+    width: 10rem;
+  }
+  .textImg__titulo {
+    color: #ac2b2b;
+    text-align: center;
+    font-family: "Permanent Marker", cursive;
+    font-size: 1rem;
+  }
+  input {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .titulo {
+    font-size: 0.5rem;
+  }
+  iframe {
+    width: 150%;
+  }
+  footer {
+    background-image: url(../imagenes/footer.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: -5%;
+  }
+}
+/*# sourceMappingURL=estilo.css.map */
