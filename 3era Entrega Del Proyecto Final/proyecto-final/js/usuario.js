@@ -27,8 +27,8 @@ const agregarLugares = (nombreP, precioP, diasP) => {
 
 const guardarDatos = () => {
   let nombreP = document.getElementById("nombreB").value
-  let precioP = document.getElementById("precioB").value
-  let diasP = document.getElementById("diasB").value
+  let precioP = Number(document.getElementById("precioB").value)
+  let diasP = Number(document.getElementById("diasB").value)
 
   listaProductos.push(agregarLugares(nombreP, precioP, diasP))
 
@@ -36,8 +36,15 @@ const guardarDatos = () => {
 }   
 
 document.getElementById("agregarB").addEventListener("click", (e) => {
-  e.preventDefault()
-  guardarDatos()
+  let nombreP = document.getElementById("nombreB").value
+  let precioP = document.getElementById("precioB").value
+  let diasP = document.getElementById("diasB").value
+
+  if (nombreP == "" || precioP == "" || diasP == "") { 
+  } else {
+    e.preventDefault()
+    guardarDatos()
+  }
 })
 
 $(".btnPetalo").prepend('<button><img class="petalo-btn" src="../imagenes/sakura-btn.png" alt="sakura10"></button>')

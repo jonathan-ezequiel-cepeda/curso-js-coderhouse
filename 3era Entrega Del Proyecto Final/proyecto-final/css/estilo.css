@@ -365,6 +365,38 @@ article {
   margin-left: 15%;
   margin-right: 15%; }
 
+.agregarLugares {
+  border-style: solid;
+  border-radius: 1rem;
+  border-color: #c56565;
+  width: 10rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  color: #c91f1f; }
+
+.placeholder {
+  border-style: solid;
+  border-radius: 1rem;
+  border-color: #c56565;
+  width: 15rem;
+  height: 2rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  color: #c91f1f; }
+
 .petalo-btn {
   bottom: 2%;
   right: 2%;
