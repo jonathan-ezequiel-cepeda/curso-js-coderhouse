@@ -1,6 +1,10 @@
+//Variables
+
 let listaObjetos = [0];
 let imprimirDatos = document.getElementById("paqueteDinamico2")
 let btn = document.getElementById("finalizarCompra")
+
+//Boton flor, activa y desactiva la animacion de los petalos
 
 $(".btnPetalo").prepend('<button><img class="petalo-btn" src="../imagenes/sakura-btn.png" alt="sakura10"></button>')
 
@@ -8,6 +12,7 @@ $(".petalo-btn").on("click", () => {
   $(".petalo").slideToggle()
 })
 
+//Lista del carrito
 
 if (localStorage.getItem("carrito") == null) {
     $("#finalizarCompra").hide();
@@ -35,6 +40,7 @@ if (localStorage.getItem("carrito") == null) {
     }
 }
 
+//Boton de aceptar compra
 
 const aceptarCompra = () => {
 

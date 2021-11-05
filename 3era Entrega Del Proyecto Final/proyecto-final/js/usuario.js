@@ -1,3 +1,5 @@
+//Clase
+
 class Productos {
   constructor(nombreP, precioP, diasP){
     this.nombreP = nombreP,
@@ -5,6 +7,8 @@ class Productos {
     this.diasP = diasP
   }
 }
+
+//Variables
 
 const tokyo = new Productos( "Toyko", 2000, 5)
 const osaka = new Productos("Osaka", 1700,  7)
@@ -20,10 +24,14 @@ if (localStorage.getItem("lista") == null) {
     listaProductos = JSON.parse(localStorage.getItem("lista"))
 }
 
+//Funcion constructora
+
 const agregarLugares = (nombreP, precioP, diasP) => {
   const producto = new Productos(nombreP, precioP, diasP)
   return producto
 }
+
+//funcion para guardar un nuevo paquete
 
 const guardarDatos = () => {
   let nombreP = document.getElementById("nombreB").value
@@ -46,6 +54,8 @@ document.getElementById("agregarB").addEventListener("click", (e) => {
     guardarDatos()
   }
 })
+
+//Boton flor, activa y desactiva la animacion de los petalos
 
 $(".btnPetalo").prepend('<button><img class="petalo-btn" src="../imagenes/sakura-btn.png" alt="sakura10"></button>')
 

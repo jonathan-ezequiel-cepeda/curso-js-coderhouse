@@ -1,6 +1,18 @@
+//Variables
+
 let listaObjetos;
 let imprimirDatos = document.getElementById("paqueteDinamico")
 const urlDolar = "https://www.dolarsi.com/api/api.php?type=valoresprincipales"
+
+//Boton flor, activa y desactiva la animacion de los petalos
+
+$(".btnPetalo").prepend('<button><img class="petalo-btn" src="../imagenes/sakura-btn.png" alt="sakura10"></button>')
+
+$(".petalo-btn").on("click", () => {
+  $(".petalo").slideToggle()
+})
+
+//Texto que se muestra si no hay paquetes
 
 if (localStorage.getItem("lista") == null) {
   let div = document.createElement("div");
@@ -31,6 +43,9 @@ if (localStorage.getItem("lista") == null) {
 } else {
     listaObjetos = JSON.parse(localStorage.getItem("lista"))
 }
+
+
+//Lista que se muestra cuando hay paquetes
 
 for (let i = 0; i < listaObjetos.length; i++){
   let div = document.createElement("div");
@@ -82,11 +97,7 @@ const agregar = (i) => {
     )
 }
 
-$(".btnPetalo").prepend('<button><img class="petalo-btn" src="../imagenes/sakura-btn.png" alt="sakura10"></button>')
-
-$(".petalo-btn").on("click", () => {
-  $(".petalo").slideToggle()
-})
+//API del dolar
 
 $.get(urlDolar, (data, est) =>{
 
