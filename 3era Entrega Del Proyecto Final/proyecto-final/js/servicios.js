@@ -1,5 +1,6 @@
 let listaObjetos;
 let imprimirDatos = document.getElementById("paqueteDinamico")
+const urlDolar = "https://www.dolarsi.com/api/api.php?type=valoresprincipales"
 
 if (localStorage.getItem("lista") == null) {
   let div = document.createElement("div");
@@ -69,4 +70,20 @@ $(".btnPetalo").prepend('<button><img class="petalo-btn" src="../imagenes/sakura
 
 $(".petalo-btn").on("click", () => {
   $(".petalo").slideToggle()
+})
+
+$.get(urlDolar, (data, est) =>{
+
+  if(est == "success"){
+
+    data.forEach(element => {
+      $("#dolar").append(       
+      `
+      <li class="list-group-item justify-content-between align-items-center">${element.casa.nombre}</li>
+      <li class="list-group-item justify-content-between align-items-center">${element.casa.compra}</li>
+      <li class="list-group-item justify-content-between align-items-center">${element.casa.venta}</li>
+      `
+      )
+    })
+  }
 })
