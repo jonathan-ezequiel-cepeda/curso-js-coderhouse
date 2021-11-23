@@ -1,0 +1,678 @@
+.colorTitulo {
+  color: #555555; }
+
+.center {
+  text-align: center;
+  align-items: center; }
+
+.borde {
+  border: solid 0.5em #c56565;
+  border-radius: 5%;
+  opacity: 1; }
+
+.borde:hover {
+  opacity: 1; }
+
+.escala {
+  width: 20em; }
+
+.vertical {
+  margin: 1rem;
+  text-align: center; }
+
+p {
+  color: #555555;
+  text-align: center;
+  font-weight: bold;
+  margin: 3em; }
+
+h4 {
+  margin-top: 3rem;
+  margin-left: 2%;
+  margin-right: 2%; }
+
+h3 {
+  color: #ac2b2b;
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  font-size: 1.5rem; }
+
+a {
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  text-decoration: none;
+  color: #c91f1f; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../imagenes/background.png);
+  background-size: 30%;
+  background-repeat: repeat;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  box-sizing: border-box;
+  overflow-x: hidden; }
+
+header {
+  background-image: url(../imagenes/bg-header.png);
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat; }
+  header nav ul li {
+    color: #ec1a1a;
+    display: inline-block;
+    font-size: large;
+    margin: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.1rem;
+    padding: 0.1rem 1.5rem;
+    opacity: 0.9; }
+    header nav ul li:hover {
+      background-position: right center;
+      color: black;
+      text-decoration: none;
+      opacity: 0.8; }
+  header .titulo {
+    text-align: center;
+    font-family: "Permanent Marker", cursive;
+    text-decoration: none;
+    color: #c91f1f;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 1rem; }
+  header .titulo :hover {
+    color: black;
+    opacity: 0.8;
+    transition-duration: 1s; }
+  header .logo {
+    width: 6rem;
+    display: inline-block;
+    margin-bottom: 2rem; }
+
+.menuh {
+  margin-top: 2rem;
+  margin-bottom: 1rem; }
+
+footer {
+  background-image: url(../imagenes/footer.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-bottom: -2%; }
+  footer .linea {
+    border-top: solid #555555;
+    height: 1rem;
+    padding: 0;
+    margin: 0.2rem; }
+  footer .titulo2 {
+    color: #c91f1f;
+    text-align: center;
+    font-family: "Permanent Marker", cursive;
+    font-size: 150%;
+    padding: 0.1rem; }
+  footer .tituloContacto {
+    margin-top: 3rem;
+    margin-bottom: 2rem; }
+  footer .flex {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ac2b2b; }
+    footer .flex .logoRedes {
+      width: 3rem;
+      display: -ms-inline-flexbox;
+      margin-left: 3%;
+      margin-right: 3%;
+      margin-top: 1rem;
+      justify-content: center; }
+      footer .flex .logoRedes:hover {
+        transform: scale(1.2);
+        transition: 1s; }
+    footer .flex .redes-sociales {
+      margin-left: 3%;
+      margin-right: 3%;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      color: #ac2b2b;
+      text-align: center;
+      font-size: 1rem;
+      font-weight: lighter;
+      display: inline-block; }
+  footer input {
+    border-style: solid;
+    border-radius: 1rem;
+    border-color: #c56565;
+    width: 10rem;
+    height: 2rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    color: #c91f1f; }
+  footer textarea {
+    border-radius: 1rem;
+    border-color: #c56565;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    width: 14rem;
+    height: 14rem; }
+
+.actividades {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-items: normal;
+  align-content: center;
+  justify-content: space-evenly;
+  color: #555555;
+  margin-top: 3rem; }
+  .actividades .textImg {
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-items: normal;
+    align-content: center;
+    justify-content: space-evenly;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 2rem; }
+    .actividades .textImg:hover {
+      opacity: 1;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-items: normal;
+      align-content: center;
+      justify-content: space-evenly;
+      transition-duration: 1s;
+      transform: scale(1.05); }
+    .actividades .textImg .textImg__titulo {
+      color: #ac2b2b;
+      text-align: center;
+      font-family: "Permanent Marker", cursive;
+      font-size: 1.5rem; }
+    .actividades .textImg .textImg__text {
+      opacity: 0.8;
+      color: black;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-items: normal;
+      align-content: center;
+      justify-content: space-evenly; }
+    .actividades .textImg .textImg__img {
+      border: solid 0.5em #c56565;
+      border-radius: 5%;
+      opacity: 1;
+      width: 20rem; }
+
+.videoflex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-items: center;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  flex: 1;
+  margin: 3rem; }
+  .videoflex iframe {
+    flex: 1;
+    margin: 0.5rem;
+    border: solid 0.5em #c56565;
+    border-radius: 5%;
+    opacity: 0.8; }
+    .videoflex iframe:hover {
+      opacity: 1; }
+
+.lugares-grid {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "tokyo text-tokyo" "kyoto text-kyoto" "osaka text-osaka" "nagano text-nagano" "fukuoka text-fukuoka";
+  row-gap: 1rem;
+  column-gap: 1rem;
+  align-items: center;
+  justify-items: center;
+  flex-wrap: wrap; }
+
+.title-grid {
+  font-size: 200%;
+  text-align: center;
+  margin: 5px; }
+
+.image-grid {
+  width: 30rem; }
+
+.text-grid {
+  text-align: center;
+  vertical-align: middle;
+  align-self: center;
+  padding: 0rem; }
+
+.text-grid:hover {
+  transform: scale(1.1);
+  transition-duration: 2s; }
+
+.tokyo {
+  grid-area: tokyo;
+  margin: 2rem; }
+
+.tokyo:hover {
+  transform: scale(1.1);
+  transition-duration: 2s; }
+
+.text-tokyo {
+  grid-area: text-tokyo;
+  margin: 5rem;
+  border: solid 0.5em #c56565;
+  border-radius: 5%; }
+
+.kyoto {
+  grid-area: kyoto;
+  margin: 2rem; }
+
+.kyoto:hover {
+  transform: scale(1.1);
+  transition-duration: 2s; }
+
+.text-kyoto {
+  grid-area: text-kyoto;
+  margin: 5rem;
+  border: solid 0.5em #c56565;
+  border-radius: 5%; }
+
+.osaka {
+  grid-area: osaka;
+  margin: 2rem; }
+
+.osaka:hover {
+  transform: scale(1.1);
+  transition-duration: 2s; }
+
+.text-osaka {
+  grid-area: text-osaka;
+  margin: 5rem;
+  border: solid 0.5em #c56565;
+  border-radius: 5%; }
+
+.nagano {
+  grid-area: nagano;
+  margin: 2rem; }
+
+.nagano:hover {
+  transform: scale(1.1);
+  transition-duration: 2s; }
+
+.text-nagano {
+  grid-area: text-nagano;
+  margin: 5rem;
+  border: solid 0.5em #c56565;
+  border-radius: 5%; }
+
+.fukuoka {
+  grid-area: fukuoka;
+  margin: 2rem; }
+
+.fukuoka:hover {
+  transform: scale(1.1);
+  transition-duration: 2s; }
+
+.text-fukuoka {
+  grid-area: text-fukuoka;
+  margin: 5rem;
+  border: solid 0.5em #c56565;
+  border-radius: 5%; }
+
+article {
+  flex: 1;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  background-color: #c56565;
+  text-align: center; }
+
+.btnColor {
+  flex: 1;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  background-color: #ffb8c5;
+  text-align: center;
+  border-color: #ac2b2b;
+  border-width: 0.2rem;
+  opacity: 0.8; }
+  .btnColor:hover {
+    background-color: #fc91a5; }
+
+.banner {
+  width: 60%;
+  border-radius: 10%;
+  margin-bottom: 3rem; }
+
+.empresa {
+  margin-left: 15%;
+  margin-right: 15%; }
+
+.agregarLugares {
+  border-style: solid;
+  border-radius: 1rem;
+  border-color: #c56565;
+  width: 10rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  color: #c91f1f; }
+
+.placeholder {
+  border-style: solid;
+  border-radius: 1rem;
+  border-color: #c56565;
+  width: 15rem;
+  height: 2rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  color: #c91f1f; }
+
+.petalo-btn {
+  bottom: 2%;
+  right: 2%;
+  position: fixed;
+  display: block;
+  width: 7%;
+  opacity: 0.9;
+  overflow: hidden; }
+
+.petalo {
+  width: 1rem;
+  opacity: 0.7;
+  overflow: hidden; }
+
+.leaf {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; }
+
+.leaf div {
+  position: absolute;
+  display: block; }
+
+.leaf div:nth-child(1) {
+  left: 10%;
+  animation: animate 15s linear infinite; }
+
+.leaf div:nth-child(2) {
+  left: 20%;
+  animation: animate 20s linear infinite; }
+
+.leaf div:nth-child(3) {
+  left: 30%;
+  animation: animate 25s linear infinite; }
+
+.leaf div:nth-child(4) {
+  left: 40%;
+  animation: animate 30s linear infinite; }
+
+.leaf div:nth-child(5) {
+  left: 50%;
+  animation: animate 18s linear infinite; }
+
+.leaf div:nth-child(6) {
+  left: 60%;
+  animation: animate 28s linear infinite; }
+
+.leaf div:nth-child(7) {
+  left: 70%;
+  animation: animate 24s linear infinite; }
+
+.leaf div:nth-child(8) {
+  left: 80%;
+  animation: animate 21s linear infinite; }
+
+.leaf div:nth-child(9) {
+  left: 84%;
+  animation: animate 18s linear infinite; }
+
+@keyframes animate {
+  0% {
+    opacity: 0.5;
+    top: -10%;
+    transform: translateX(30px) rotate(0deg); }
+  10% {
+    opacity: 1; }
+  20% {
+    transform: translateX(-30px) rotate(45deg);
+    opacity: 1; }
+  40% {
+    transform: translateX(30px) rotate(90deg);
+    opacity: 1; }
+  60% {
+    transform: translateX(-30px) rotate(135deg);
+    opacity: 1; }
+  80% {
+    transform: translateX(30px) rotate(180deg);
+    opacity: 0.7; }
+  100% {
+    top: 105%;
+    transform: translateX(30px) rotate(225deg);
+    opacity: 0.2; } }
+
+@media screen and (min-width: 1600px) {
+  .lugares-grid {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 19%);
+    grid-template-areas: "tokyo text-tokyo" "kyoto text-kyoto" "osaka text-osaka" "nagano text-nagano" "fukuoka text-fukuoka";
+    row-gap: 1rem;
+    column-gap: 1rem;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap; }
+  .videoflex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    flex: 1;
+    margin: 2rem; }
+  .textImg {
+    margin-left: 25%;
+    margin-right: 25%; }
+  .text-tokyo {
+    margin-top: 10rem; }
+  .text-nagano {
+    margin-top: 10rem; }
+  .text-kyoto {
+    margin-top: 10rem; }
+  .text-fukuoka {
+    margin-top: 10rem; }
+  .text-osaka {
+    margin-top: 10rem; } }
+
+@media screen and (max-width: 1024px) {
+  .lugares-grid {
+    margin: 1rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(10, 9.3%);
+    grid-template-areas: "tokyo" "text-tokyo" "kyoto" "text-kyoto" "osaka" "text-osaka" "nagano" "text-nagano" "fukuoka" "text-fukuoka";
+    row-gap: 2rem;
+    column-gap: 1rem;
+    align-items: center;
+    justify-items: center; }
+  .image-grid {
+    width: 30rem; } }
+
+@media screen and (max-width: 768px) {
+  .lugares-grid {
+    margin: 0rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(10, 9.8%);
+    grid-template-areas: "tokyo" "text-tokyo" "kyoto" "text-kyoto" "osaka" "text-osaka" "nagano" "text-nagano" "fukuoka" "text-fukuoka";
+    row-gap: 0rem;
+    column-gap: 0rem;
+    align-items: center;
+    justify-items: center; }
+  .image-grid {
+    width: 20rem; }
+  .textImg {
+    margin-left: 10%;
+    margin-right: 10%; }
+  footer {
+    background-image: url(../imagenes/footer.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: -5%; } }
+
+@media screen and (max-width: 560px) {
+  .lugares-grid {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(10, 9.8%);
+    grid-template-areas: "tokyo" "text-tokyo" "kyoto" "text-kyoto" "osaka" "text-osaka" "nagano" "text-nagano" "fukuoka" "text-fukuoka";
+    row-gap: 0rem;
+    column-gap: 0rem;
+    align-items: center;
+    justify-items: center; }
+  .textImg {
+    margin-left: 10%;
+    margin-right: 10%; }
+  .text-grid {
+    border: none;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0rem;
+    margin-bottom: 0rem; }
+  .image-grid {
+    width: 15rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem; }
+  footer {
+    background-image: url(../imagenes/footer.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: -5%; } }
+
+@media screen and (max-width: 480px) {
+  .lugares-grid {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(10, 9.8%);
+    grid-template-areas: "tokyo" "text-tokyo" "kyoto" "text-kyoto" "osaka" "text-osaka" "nagano" "text-nagano" "fukuoka" "text-fukuoka";
+    row-gap: 0rem;
+    column-gap: 0rem;
+    align-items: center;
+    justify-items: center; }
+  .textImg {
+    margin-left: 10%;
+    margin-right: 10%; }
+  .text-grid {
+    border: none;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0rem;
+    margin-bottom: 0rem; }
+  .image-grid {
+    width: 15rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem; }
+  .titulo2 {
+    margin-left: 1%;
+    margin-right: 1%; }
+  .titulo {
+    margin-left: 1%;
+    margin-right: 1%; }
+  p {
+    margin-left: 1%;
+    margin-right: 1%; }
+  .leaf div:nth-child(9) {
+    display: none; }
+  footer {
+    background-image: url(../imagenes/footer.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: -5%; } }
+
+@media screen and (max-width: 360px) {
+  .lugares-grid {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(10, 9.8%);
+    grid-template-areas: "tokyo" "text-tokyo" "kyoto" "text-kyoto" "osaka" "text-osaka" "nagano" "text-nagano" "fukuoka" "text-fukuoka";
+    row-gap: 0rem;
+    column-gap: 0rem;
+    align-items: center;
+    justify-items: center; }
+  .textImg {
+    margin-left: 5%;
+    margin-right: 5%; }
+  .text-grid {
+    border: none;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0rem;
+    margin-bottom: 0rem; }
+  .image-grid {
+    width: 15rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem; }
+  .textImg__img {
+    width: 10rem; }
+  .textImg__titulo {
+    color: #ac2b2b;
+    text-align: center;
+    font-family: "Permanent Marker", cursive;
+    font-size: 1rem; }
+  input {
+    margin-left: 2%;
+    margin-right: 2%; }
+  .titulo {
+    font-size: 0.5rem; }
+  iframe {
+    width: 150%; }
+  footer {
+    background-image: url(../imagenes/footer.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: -5%; } }
